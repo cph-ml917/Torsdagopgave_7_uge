@@ -8,12 +8,13 @@ public class Cinema {
     public Cinema(int rows, int seats) {
         //Fejlretter 1/5:
         this.seats = new String[rows][seats];
+        //Indsætter to for-loops
         for (int i = 0; i < rows; i++){
             for (int j = 0; j < seats; j++){
                 this.seats[i][j] = "O";
             }
         }
-        ////Fejlretter 2/5: Flyttet - Direktørens sæde reserveres her
+        ////Fejlretter 2/5: Flyttet ned - Direktørens sæde reserveres her
         this.seats[0][0] = "X";
     }
 
