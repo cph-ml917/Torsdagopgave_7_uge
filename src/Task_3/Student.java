@@ -6,13 +6,13 @@ import java.util.ArrayList;
 public abstract class Student extends Person {
 
     private ArrayList<String> passedCourses;
-    private ArrayList<String> currentcourses;
+    private ArrayList<String> currentCourses;
 
     //3.3
     public Student(String name, ArrayList<String> passedCourses){
         super(name);
         this.passedCourses = passedCourses;
-        this.currentcourses = new ArrayList<>();
+        this.currentCourses = new ArrayList<>();
     }
 
     //3.4
@@ -21,7 +21,7 @@ public abstract class Student extends Person {
         if (passedCourses.contains(course)){
             return false;
         } else {
-            currentcourses.add(course);
+            currentCourses.add(course);
             return true;
         }
     }

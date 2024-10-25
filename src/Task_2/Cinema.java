@@ -31,6 +31,7 @@ public class Cinema {
     // If the seat is already reserved, return false.
     public boolean reserve(int row, int seat) {
         //Her reserveres sædet, hvis det er ledigt
+
         if (seats[row][seat].equals("O")) {
             seats[row][seat] = "X";
             return true;
@@ -40,6 +41,7 @@ public class Cinema {
 
     public boolean cancelReservation(int row, int seat) {
         //Fejlretter 3/5: "X" har erstattet "x" nedenfor:
+
         if (seats[row][seat].equals("X")) {
             seats[row][seat] = "O";
             return true;
