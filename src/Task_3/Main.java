@@ -50,6 +50,7 @@ public class Main {
 
         persons.add(student1);
         persons.add(student2);
+
         persons.add(teacher1);
         persons.add(teacher2);
         persons.add(teacher3);
